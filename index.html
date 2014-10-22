@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://getbootstrap.com/examples/justified-nav/# -->
+<html ng-app="websiteApp" ng="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+
+    <title>Kaushik's little place</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="css/social-buttons.css"
+    <!-- Custom styles for this template -->
+    <link href="css/justified-nav.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="js/ie-emulation-modes-warning.js"></script><style type="text/css"></style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+  <body ng-cloak ng-controller="ViewCtrl" >
+
+    <div class="container main-container" style="background-color:white">
+
+      <div class="masthead">
+
+        <ul class="nav nav-justified" >
+          <li ng-repeat="item in menu" ng-class="setActiveClass(item)"><a ng-click="setMenuItem(item)" href="">{{item.text}}</a></li>
+          <!--li class="active"><a href="justifed_nav.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Work Experience</a></li>
+          <li><a href="./justifed_nav_files/justifed_nav.html">Resume</a></li>
+          <li><a href="./justifed_nav_files/justifed_nav.html">Contact</a></li-->
+
+        </ul>
+      </div>
+
+      <!-- Jumbotron -->
+      <div ng-include="currentMenu.url">
+      <!--div class="jumbotron">
+        <h2>Welcome To My Own Little Place On The Internet</h2>
+
+
+      </div>
+
+
+      <div class="row" style="padding:10px;padding-bottom:30px;">
+        <div class="col-lg-8 text-columns">
+            <p>My name is Lakshmikanth Kaushik (please just call me Kaushik. It's weird. I can't explain now). I am a Masters student at the Ohio State University, Columbus, Ohio. I am actively seeking internship/Co-op opportunities for the summer
+                of 2015. Please do have a look around and contact me if you like what you see!   </p>
+            <p>Also, click the button below for a cool ass backstretch image. But remember, once you go there, there's no coming back!</p>
+            <button type="button" onclick="backstretchForFun()" class="btn btn-primary">Please!</button>
+            <br/><br/><br/>
+
+          <p class=''><span style="font-weight:bold;">Disclaimer: </span>The above mentioned (irreversible)feature is not a reflection of my javascript skills. It is more a reflection of my sometimes disappointing sense of humor.</p>
+          </div>
+        <div class="col-lg-4">
+          <!--h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p-->
+            <!--img src='images/dp.jpg'/>
+        </div>
+
+      </div>
+
+      <!-- Site footer -->
+
+    </div>
+    <div class="footer">
+      <div class="row">
+        <div class="col-lg-6 pull-right footer-icons">
+            <a class="btn btn-danger" href="mailto:kaush.lakers@gmail.com">
+              <i class="fa fa-envelope-o fa-lg">
+              </i>
+            </a>
+            <a class="btn btn-primary"  href="https://www.linkedin.com/in/lkaushik">
+              <i style="color:white" class="fa fa-linkedin fa-lg">
+              </i>
+            </a>
+            <a class="btn btn-default"  href="https://twitter.com/kaushik4491">
+              <i style="color:#33CCFF" class="fa fa-twitter fa-lg">
+              </i>
+            </a>
+
+
+          <!--button type="button" class="btn btn-default btn">
+            <span class="glyphicon glyphicon-envelope"></span>
+          </button-->
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+     <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="js/controller.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script type="text/javascript">
+        function backstretchForFun(){
+            $.backstretch("images/bg-compressed.jpg");
+        }
+      //$.backstretch("images/bg-compressed.jpg");
+
+    </script>
+
+</body></html>
