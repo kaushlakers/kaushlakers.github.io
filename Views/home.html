@@ -13,7 +13,7 @@
           of 2015. Please do have a look around and contact me if you like what you see!   </p>
       <p>You can <b>contact me</b> using one of the nifty little glyphicons at the bottom right of the page.</p>
       <p>Also, click the button below for a cool ass backstretch image. But remember, once you go there, there's no coming back!</p>
-      <button type="button" onclick="backstretchForFun()" class="btn btn-primary">You need a backstretch!</button>
+      <button id="bs"type="button" ng-click="setBackstretch($event)" ng-disabled="backstretch.flag"  class="btn btn-primary">{{backstretch.text}}</button>
       <br/><br/><br/><br/><br/><br/>
 
     <p class=''><span style="font-weight:bold;">Disclaimer: </span>The above mentioned (irreversible)feature is not a demonstration of my javascript skills. It is merely a reflection of my sometimes disappointing sense of humor.</p>
@@ -21,7 +21,7 @@
   <div class="col-lg-4">
     <!--h2>Heading</h2>
     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p-->
-      <img src='images/dp.jpg'/>
+      <img src='images/dp.jpg'/ class="img-responsive" style="width:95%; height:auto; margin:0 auto;">
   </div>
 
 </div>

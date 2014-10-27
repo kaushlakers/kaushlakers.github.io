@@ -1,5 +1,6 @@
 body {
   padding-top: 20px;
+  #font-family: "Roboto Slab" !important;
 }
 
 .footer {
@@ -130,4 +131,15 @@ html{
 }
 .footer-icons{
   text-align:right;
+}
+
+.no-click{
+  pointer-events: none;
+}
+.project-name{
+  color: #888;
+  font-weight: bold;
+}
+.skill-list{
+  margin-bottom: 10px;
 }

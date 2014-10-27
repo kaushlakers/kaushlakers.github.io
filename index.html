@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!-- saved from url=(0048)http://getbootstrap.com/examples/justified-nav/# -->
 <html ng-app="websiteApp" ng="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="description" content="Lakshmikanth Kaushik's personal website">
+    <meta name="keywords" content="Lakshmikanth,Kaushik,personal,website,programmer">
+    <meta name="author" content="Lakshmikanth Kaushik">
 
 
     <title>Kaushik's little place</title>
@@ -14,7 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
     <link href="css/social-buttons.css"
     <!-- Custom styles for this template -->
     <link href="css/justified-nav.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 
   <body ng-cloak ng-controller="ViewCtrl" >
 
-    <div class="container main-container" style="background-color:white">
+    <div class="container main-container" style="background-color:white;font-color:#777 !important;">
 
       <div class="masthead">
 
@@ -49,6 +49,7 @@
       </div>
 
       <!-- Jumbotron -->
+
       <div ng-include="currentMenu.url">
       <!--div class="jumbotron">
         <h2>Welcome To My Own Little Place On The Internet</h2>
@@ -89,6 +90,11 @@
               <i style="color:white" class="fa fa-linkedin fa-lg">
               </i>
             </a>
+            <a class="btn btn-default"  href="https://github.com/kaushlakers" target="_blank">
+              <i style="" class="fa fa-github fa-lg">
+              </i>
+            </a>
+
             <a class="btn btn-default"  href="https://twitter.com/kaushik4491" target="_blank">
               <i style="color:#33CCFF" class="fa fa-twitter fa-lg">
               </i>
@@ -121,7 +127,14 @@
     <script type="text/javascript">
         function backstretchForFun(){
             $.backstretch("images/bg-compressed.jpg");
+            $(".main-container").css("opacity",0.92);
+            $(".main-container").css("-khtml-opacity",0.92);
+            $(".main-container").css("-moz-opacity",0.92);
+            $("#bs").prop('disabled', true);
+            $("#bs").text('I warned you!');
+
         }
+
       //$.backstretch("images/bg-compressed.jpg");
 
     </script>
