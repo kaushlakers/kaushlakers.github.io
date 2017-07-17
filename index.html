@@ -38,46 +38,10 @@
 
         <ul class="nav nav-justified" >
           <li ng-repeat="item in menu" ng-class="setActiveClass(item)"><a ng-click="setMenuItem(item)" href="">{{item.text}}</a></li>
-          <!--li class="active"><a href="justifed_nav.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Work Experience</a></li>
-          <li><a href="./justifed_nav_files/justifed_nav.html">Resume</a></li>
-          <li><a href="./justifed_nav_files/justifed_nav.html">Contact</a></li-->
-
         </ul>
       </div>
-
       <!-- Jumbotron -->
-
       <div ng-include="currentMenu.url">
-      <!--div class="jumbotron">
-        <h2>Welcome To My Own Little Place On The Internet</h2>
-
-
-      </div>
-
-
-      <div class="row" style="padding:10px;padding-bottom:30px;">
-        <div class="col-lg-8 text-columns">
-            <p>My name is Lakshmikanth Kaushik (please just call me Kaushik. It's weird. I can't explain now). I am a Masters student at the Ohio State University, Columbus, Ohio. I am actively seeking internship/Co-op opportunities for the summer
-                of 2015. Please do have a look around and contact me if you like what you see!   </p>
-            <p>Also, click the button below for a cool ass backstretch image. But remember, once you go there, there's no coming back!</p>
-            <button type="button" onclick="backstretchForFun()" class="btn btn-primary">Please!</button>
-            <br/><br/><br/>
-
-          <p class=''><span style="font-weight:bold;">Disclaimer: </span>The above mentioned (irreversible)feature is not a reflection of my javascript skills. It is more a reflection of my sometimes disappointing sense of humor.</p>
-          </div>
-        <div class="col-lg-4">
-          <!--h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p-->
-            <!--img src='images/dp.jpg'/>
-        </div>
-
-      </div>
-
-      <!-- Site footer -->
-
     </div>
     <div class="footer">
       <div class="row">
@@ -95,49 +59,30 @@
               </i>
             </a>
 
-            <a class="btn btn-default"  href="https://twitter.com/kaushik4491" target="_blank">
+            <a class="btn btn-default"  href="https://twitter.com/kaushlaks" target="_blank">
               <i style="color:#33CCFF" class="fa fa-twitter fa-lg">
               </i>
             </a>
-
-
-          <!--button type="button" class="btn btn-default btn">
-            <span class="glyphicon glyphicon-envelope"></span>
-          </button-->
         </div>
-
-
       </div>
-
     </div>
-
   </div>
-     <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
     <script src="js/controller.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
     <script type="text/javascript">
-        function backstretchForFun(){
-            console.log("hello");
-            $.backstretch("images/bg-32.jpg");
-            $(".main-container").css("opacity",0.92);
-            $(".main-container").css("-khtml-opacity",0.92);
-            $(".main-container").css("-moz-opacity",0.92);
-            $("#bs").prop('disabled', true);
-            $("#bs").text('I warned you!');
-
+        function backstretchForFun() {
+          console.log("hello");
+          $.backstretch("images/bg-32.jpg");
+          $(".main-container").css("opacity",0.92);
+          $(".main-container").css("-khtml-opacity",0.92);
+          $(".main-container").css("-moz-opacity",0.92);
+          $("#bs").prop('disabled', true);
+          $("#bs").text('I warned you!');
         }
-
-      //$.backstretch("images/bg-compressed.jpg");
-
     </script>
 
 </body></html>
